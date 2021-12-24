@@ -12,7 +12,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     background-color: #272d3b;
     width: 100vw;
     padding: 1rem 10rem;
@@ -38,6 +38,7 @@ header {
 .nav__items li {
     margin-right: 2rem;
     font-size: 2rem;
+    letter-spacing: .5rem;
     font-family: 'Raleway', sans-serif;
     color: #FFD700;
 }
@@ -70,11 +71,11 @@ header {
     opacity: 0;
     cursor: pointer;
     transition: opacity 2s ease-in-out;
-    filter: saturate(.8);
+    filter: saturate(1);
     position: absolute;
     z-index: 1;
 }
-.jumbo-slider__slide--active .jumbo-slider__slide-bg {
+.slider__slide--active .slider__slide-bg {
     opacity: 1;
 }
 .slider__info {
@@ -87,11 +88,59 @@ header {
     width: 100%;
 }
 .slider__slide-text {
-    font-size: 20rem;
-    font-weight: 700;
-    color: #fff;
+    font-size: 25rem;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    color: #FFD700;
+    background-color: rgb(39, 45, 59, .3);
+    background-clip: border-box;
     position: relative;
+    top: 50%;
+    left: 25%;
     opacity: 0;
-    transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 500px, 0);
     transition: transform .4s ease-in-out 1s, .4s ease-in-out 1s;
+    margin-bottom: 2rem;
+}
+.slider__slide--active .slider__slide-text {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+.slider__elipsis {
+    width: 10rem;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.slider__circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #FFD700;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.slider__circle--filled {
+    background: #FFD700;
+}
+.slider__timeline {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+}
+.slider__line {
+    height: 5px;
+    width: 0px;
+    background: #ffffff;
+    transition: width 8s ease-in-out;
+}
+.slider__slide--active .slider__line {
+    width: 100%;
+    background: #fff;
 }
