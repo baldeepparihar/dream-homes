@@ -5,7 +5,7 @@ let init = () => {
     let circles = document.getElementsByClassName('slider__circle');
 
     current = 1;
-    time = 6000;
+    time = 4000;
     console.log(`current: ${current}`);
 
     // slide animation
