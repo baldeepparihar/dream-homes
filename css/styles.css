@@ -104,7 +104,7 @@ header {
     left: 40%;
     opacity: 0;
     transform: translate3d(0, 200px, 0);
-    transition: transform .3s ease-in-out .8s, .3s ease-in-out .8s;
+    transition: transform .3s ease-in .8s, .3s ease-in .8s;
     margin-bottom: 2rem;
     overflow-x: hidden;
 }
