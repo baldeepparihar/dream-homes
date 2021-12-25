@@ -131,6 +131,44 @@ header {
 .listing__description--container p:last-child {
     font-weight: 300;
 }
+/* FOOTER */
+footer {
+    display: flex;
+    background: #21252e;
+}
+.footer--left {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+.footer--right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.footer--left p {
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    color: #FFD700;
+}
+.footer--left .footer__social img {
+    width: 6rem;
+    margin-right: 1rem;
+}
+.footer--right div, a, p {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    color: #FFD700;
+    margin: .5rem;
+}
 
 @media(max-width: 1400px) {
     /* LISTINGS */
@@ -142,6 +180,24 @@ header {
     }
     .listing--container {
         padding: 2rem 2rem;
+    }
+    /* FOOTER */
+    .footer--left {
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+    .footer--right {
+        padding: 2rem;
+    }
+    .footer--left p {
+        font-size: 1.75rem;
+        font-weight: 100;
+    }
+    .footer--left .footer__social img {
+        width: 4rem;
+    }
+    .footer--right div, a, p {
+        font-size: 1.75rem;
     }
 }
 
@@ -189,6 +245,24 @@ header {
     .listing__description--container p {
         font-size: 1.7rem;
     }
+    /* FOOTER */
+    .footer--left {
+        flex-wrap: wrap;
+        padding: 1.5rem;
+    }
+    .footer--right {
+        padding: 1.5rem;
+    }
+    .footer--left p {
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+    .footer--left .footer__social img {
+        width: 3rem;
+    }
+    .footer--right div, a, p {
+        font-size: 1.2rem;
+    }
 }
 
 @media(max-width: 1000px) {
@@ -213,6 +287,29 @@ header {
     .listings h1 {
         font-size: 4.5rem;
         margin-bottom: 5rem;
+    }
+        /* FOOTER */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer--left {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer--right {
+        padding: 1.5rem;
+    }
+    .footer--left p {
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+    .footer--left .footer__social img {
+        width: 3rem;
+    }
+    .footer--right div, a, p {
+        font-size: 1.2rem;
     }
 }
 
